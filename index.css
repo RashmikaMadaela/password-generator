@@ -1,0 +1,93 @@
+.mobile-break {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-break {
+    display: block; 
+  }
+}
+
+body {
+    background-color: #1F2937;
+    color: white;
+    font-family: 'inter','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 700;
+    line-height: 1.1em;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #9CA3AF;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.highlight {
+    color: #4ADF86;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #374151;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #10B981;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 190px;
+}
+button:hover {
+    background-color: #059669;
+}
+
+.password-container {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 10px;
+}
+.password {
+    background-color: #273549;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #55F991;
+}
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    padding: 15px;
+}
