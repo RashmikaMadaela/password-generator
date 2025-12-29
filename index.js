@@ -34,7 +34,7 @@ function generatePassword() {
     } else if (!includeNumbers.checked && !includeSymbols.checked) {
         characterArray = charactersOnlyLetters
     }
-    
+
     for (let i=0; i<passwordLength; i++) {
         let randomIndex1 = Math.floor(Math.random() * characterArray.length)
         let randomIndex2 = Math.floor(Math.random() * characterArray.length)
@@ -43,4 +43,14 @@ function generatePassword() {
     }
     passwordOne.textContent = password1
     passwordTwo.textContent = password2
+}
+
+function copyPassword(id) {
+    let alertBox = document.getElementById("copiedText")
+    let passwordText = document.getElementById(id).textContent
+    navigator.clipboard.writeText(passwordText)
+    alertBox.textContent = "Password Copied!"
+    setTimeout(() => {
+        alertBox.textContent = ""
+    }, 2000);
 }

@@ -28,8 +28,17 @@
         <button onclick="generatePassword()">Generate Passwords</button>
         <hr>
         <div class="password-container">
+            <div class = "password-item">
             <p class="password" id="password1">Password 1</p>
+            <img src="img/copy.svg" alt="Copy Icon" class="copy-icon" onclick="copyPassword('password1')">
+            </div>
+            <div class = "password-item">
             <p class="password" id="password2">Password 2</p>
+            <img src="img/copy.svg" alt="Copy Icon" class="copy-icon" onclick="copyPassword('password2')">
+            </div>
+        </div>
+        <p class="alert" id="copiedText"></p>    
+
 
     </div>
 <script src="index.js"></script>  

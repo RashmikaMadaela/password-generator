@@ -80,6 +80,7 @@ button:hover {
     text-align: center;
     border-radius: 5px;
     color: #55F991;
+    
 }
 .settings {
     display: flex;
@@ -90,4 +91,32 @@ button:hover {
     border: 1px solid #374151;
     border-radius: 10px;
     padding: 15px;
+}
+
+img {
+    margin: 0px;
+    padding: 0px;
+    background-color: #26303f;
+    padding: 8px;
+    border-radius: 5px;
+
+}
+
+.password-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+img.copy-icon {
+    cursor: pointer;
+}
+
+img.copy-icon:hover {
+    filter: brightness(0.8);
+}
+
+.alert {
+    color: #2ae6a7;
+    width: fit-content;
 }
