@@ -6,6 +6,10 @@
   .mobile-break {
     display: block; 
   }
+  .password-container {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 body {
@@ -17,7 +21,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 70%;
     margin: auto;
     height: 100vh;
     display: flex;
@@ -58,7 +62,7 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 20px;
     cursor: pointer;
     border-radius: 5px;
@@ -119,4 +123,19 @@ img.copy-icon:hover {
 .alert {
     color: #2ae6a7;
     width: fit-content;
+}
+
+input[type='range'] {
+  accent-color: #25f5b0; /* Sets the color of the thumb and the track progress */
+}
+
+input[type="checkbox"] {
+    accent-color: #52fac2;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #6B7280;
+    font-size: 14px;
 }
