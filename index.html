@@ -13,7 +13,7 @@
         <div class="settings">
             <div class="length-setting">
                 <label for="length">Password Length:</label>
-                <input type="range" id="length" name="length" min="8" max="20" value="12" oninput="updateval()">
+                <input type="range" id="length" name="length" min="8" max="20" value="12" oninput="updateValue()">
                 <span id="lengthval">12</span>
             </div>
             <label for="numbers">
@@ -25,11 +25,11 @@
                 Include Symbols
             </label>
         </div>
-        <button onclick="generatepw()">Generate Passwords</button>
+        <button onclick="generatePassword()">Generate Passwords</button>
         <hr>
         <div class="password-container">
-            <p class="password" id="password1">uuigdgjgsjgdjsas</p>
-            <p class="password" id="password2">jhajsdghjgsjhdg</p>
+            <p class="password" id="password1">Password 1</p>
+            <p class="password" id="password2">Password 2</p>
 
     </div>
 <script src="index.js"></script>  
